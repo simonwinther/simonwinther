@@ -45,7 +45,7 @@
 
 <hr>
 
-### 🚀 Advanced Performance Metrics
+### 🚀 Performance Metrics
 
 <table width="100%">
   <tr>
