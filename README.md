@@ -109,10 +109,8 @@
 ### :zap: Recent Activity
 
 <!--START_SECTION:activity-->
+
 1. 🗣 Commented on [#2603](https://github.com/folke/snacks.nvim/issues/2603#issuecomment-3685223820) in [folke/snacks.nvim](https://github.com/folke/snacks.nvim)
-2. ℹ️ Assigned PR [#5791](https://github.com/hoppscotch/hoppscotch/pull/5791) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
-3. ℹ️ Labeled PR [#5762](https://github.com/hoppscotch/hoppscotch/pull/5762) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
-4. ℹ️ Labeled PR [#5783](https://github.com/hoppscotch/hoppscotch/pull/5783) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
-5. ℹ️ Labeled PR [#5792](https://github.com/hoppscotch/hoppscotch/pull/5792) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
+
 <!--END_SECTION:activity-->
 
