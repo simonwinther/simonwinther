@@ -15,7 +15,6 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=simonwinther&label=SESSION_VIEWS&color=7aa2f7&style=flat-square" />
   <a href="https://user-badge.committers.top/denmark_public/simonwinther"><img height="25" src="https://user-badge.committers.top/denmark_public/simonwinther.svg" /></a>
   <a href="https://user-badge.committers.top/denmark/simonwinther"><img height="25" src="https://user-badge.committers.top/denmark/simonwinther.svg" /></a>
   <img src="https://img.shields.io/github/stars/simonwinther?logo=github&style=flat-square&color=9ece6a" />
