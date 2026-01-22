@@ -96,18 +96,6 @@
 
 <hr>
 
-### 📈 Evolution
-```mermaid
-xychart-beta
-  title "GitHub Follower History (Denmark)"
-  x-axis ["24-Q1","24-Q2","24-Q3","24-Q4","25-Q1","25-Q2","25-Q3","26-Q1"]
-  y-axis "Followers"
-  line [15, 32, 54, 78, 105, 134, 172, 210]
-
-```
-
-<hr>
-
 ### 👾 System Status
 
 <p align="center">
