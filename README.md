@@ -72,7 +72,7 @@ I use Arch Linux with Hyprland, Neovim, and Ghostty. You can check my [dotfiles]
 
 ## Projects
 
-All of my projects are available on my GitHub profile. I use my repositories as a place to experiment, learn, and build systems around the topics I care about.
+All of my projects are available on my GitHub profile. I use my repositories as a place to experiment and learn around the topics I care about.
 
 <div align="center">
 
@@ -87,7 +87,10 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 ---
 
-## GitHub Metrics
+<details>
+ <summary><strong>GitHub Metrics</strong></summary>
+
+<br/>
 
 <table>
   <tr>
@@ -141,14 +144,15 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 </table>
 
 <div align="center">
-
 <img
   src="https://github-readme-activity-graph.vercel.app/graph?username=simonwinther&theme=tokyo-night&hide_border=true&color=7aa2f7&height=300"
   width="100%"
   alt="GitHub activity graph"
 />
-
 </div>
+
+</details>
+
 
 ---
 
@@ -157,33 +161,11 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 <br/>
 
-<table>
-  <tr>
-    <td width="50%">
-      <img
-        src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
-        width="100%"
-        alt="Contribution calendar"
-      />
-    </td>
-    <td width="50%">
-      <img
-        src="https://metrics.lecoq.io/simonwinther?plugin_habits=1&plugin_habits_charts=1&theme=tokyonight&hide_border=true"
-        width="100%"
-        alt="Coding habits"
-      />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <img
-        src="https://metrics.lecoq.io/simonwinther?plugin_achievements=1&plugin_achievements_compact=1&theme=tokyonight&hide_border=true"
-        width="100%"
-        alt="GitHub achievements"
-      />
-    </td>
-  </tr>
-</table>
+<img
+  src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
+  width="100%"
+  alt="GitHub metrics"
+/>
 
 </details>
 
