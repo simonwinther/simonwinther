@@ -89,53 +89,48 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 ## GitHub Metrics
 
-<div align="center">
-
-<a href="https://next.ossinsight.io/analyze/simonwinther">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=dark"
-    >
-    <img
-      alt="OSSInsight GitHub dashboard"
-      src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=light"
-      width="100%"
-    >
-  </picture>
-</a>
-
-<br/>
-<br/>
-
-<a href="https://next.ossinsight.io/analyze/simonwinther">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=dark"
-    >
-    <img
-      alt="Currently working on"
-      src="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=light"
-      width="100%"
-    >
-  </picture>
-</a>
-
-</div>
-
-<br/>
-
 <table>
   <tr>
-    <td width="50%">
+    <td width="50%" align="center">
+      <a href="https://next.ossinsight.io/analyze/simonwinther">
+        <picture>
+          <source
+            media="(prefers-color-scheme: dark)"
+            srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=dark"
+          >
+          <img
+            alt="OSSInsight GitHub dashboard"
+            src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=light"
+            width="100%"
+          >
+        </picture>
+      </a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://next.ossinsight.io/analyze/simonwinther">
+        <picture>
+          <source
+            media="(prefers-color-scheme: dark)"
+            srcset="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=dark"
+          >
+          <img
+            alt="Currently working on"
+            src="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=light"
+            width="100%"
+          >
+        </picture>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
       <img
         src="https://github-readme-stats.vercel.app/api?username=simonwinther&show_icons=true&theme=tokyonight&hide_border=true&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&bg_color=1a1b26"
         width="100%"
         alt="GitHub stats"
       />
     </td>
-    <td width="50%">
+    <td width="50%" align="center">
       <img
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=simonwinther&layout=compact&theme=tokyonight&hide_border=true&title_color=7aa2f7&text_color=9ece6a&icon_color=bb9af7&bg_color=1a1b26&hide=HTML,CSS"
         width="100%"
