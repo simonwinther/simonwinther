@@ -5,6 +5,7 @@
         font-family: JetBrains Mono, Fira Code, Consolas, Menlo, monospace;
         font-size: 15.5px;
         font-weight: 435;
+        transform: translate(-70px, -25px);
         letter-spacing: 0.12px;
         white-space: pre;
       }
