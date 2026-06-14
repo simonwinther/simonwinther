@@ -55,7 +55,7 @@ I like working on machine learning, deep learning, medical AI, and practical sof
    width="420"
    alt="bad joooke"
  />
-<a href="https://github.com/simonwinther">
+</a>
 
 I’m studying Computer Science and I’m mostly interested in machine learning, deep learning, and medical AI.
 
