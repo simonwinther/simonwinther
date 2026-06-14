@@ -4,14 +4,14 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="./banner.svg"
+      srcset="./figures/banner.svg"
     >
     <source
       media="(prefers-color-scheme: light)"
-      srcset="./banner-light.svg"
+      srcset="./figures/banner-light.svg"
     >
     <img
-      src="./banner.svg"
+      src="./figures/banner.svg"
       alt="banner"
       width="850"
     />
@@ -62,14 +62,14 @@ I like working on machine learning, deep learning, medical AI, and practical sof
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="./code-card.svg"
+      srcset="./figures/code-card.svg"
     >
     <source
       media="(prefers-color-scheme: light)"
-      srcset="./code-card-light.svg"
+      srcset="./figures/code-card-light.svg"
     >
     <img
-      src="./code-card.svg"
+      src="./figures/code-card.svg"
       align="right"
       height="150"
       alt="code card"
@@ -260,16 +260,6 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 </div>
 
 </details>
-
----
-
-## Recent Activity
-
-<!--START_SECTION:activity-->
-
-1. Commented on [#2603](https://github.com/folke/snacks.nvim/issues/2603#issuecomment-3685223820) in [folke/snacks.nvim](https://github.com/folke/snacks.nvim)
-
-<!--END_SECTION:activity-->
 
 ---
 
