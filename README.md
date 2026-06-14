@@ -52,7 +52,7 @@ I like working on machine learning, deep learning, medical AI, and practical sof
  <img
    src="./code-card.svg"
    align="right"
-   width="420"
+   height="150"
    alt="bad joooke"
  />
 </a>
