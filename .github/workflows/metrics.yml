@@ -28,6 +28,12 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
+      - name: Store isometric commit calendar
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/isocalendar.svg metrics/isocalendar.svg
+          sudo chown -R "$USER":"$USER" metrics
+
       - name: Render coding habits
         uses: lowlighter/metrics@latest
         with:
@@ -45,6 +51,12 @@ jobs:
           plugin_habits_charts_type: graph
           plugin_habits_trim: yes
 
+      - name: Store coding habits
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/habits.svg metrics/habits.svg
+          sudo chown -R "$USER":"$USER" metrics
+
       - name: Render language activity
         uses: lowlighter/metrics@latest
         with:
@@ -58,10 +70,14 @@ jobs:
 
           # Language activity
           plugin_languages: yes
-          plugin_languages_sections: most-used, recently-used
+          plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_indepth: yes
-          plugin_languages_recent_days: 30
+
+      - name: Store language activity
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/languages.svg metrics/languages.svg
+          sudo chown -R "$USER":"$USER" metrics
 
       - name: Render lines of code
         uses: lowlighter/metrics@latest
@@ -80,6 +96,12 @@ jobs:
           plugin_lines_repositories_limit: 4
           plugin_lines_history_limit: 4
 
+      - name: Store lines of code
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/lines.svg metrics/lines.svg
+          sudo chown -R "$USER":"$USER" metrics
+
       - name: Render commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -94,6 +116,12 @@ jobs:
           # Commit calendar
           plugin_calendar: yes
           plugin_calendar_limit: 0
+
+      - name: Store commit calendar
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/calendar.svg metrics/calendar.svg
+          sudo chown -R "$USER":"$USER" metrics
 
       - name: Render achievements
         uses: lowlighter/metrics@latest
@@ -110,11 +138,14 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: compact
 
+      - name: Store achievements
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/achievements.svg metrics/achievements.svg
+          sudo chown -R "$USER":"$USER" metrics
+
       - name: Commit generated metrics
         run: |
-          sudo cp -R /metrics_renders/. .
-          test -d metrics
-          sudo chown -R "$USER":"$USER" metrics
           git add metrics
 
           if git diff --cached --quiet; then

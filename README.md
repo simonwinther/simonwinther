@@ -235,6 +235,15 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 <table>
   <tr>
+    <td colspan="2" align="center">
+      <img
+        src="/metrics/isocalendar.svg"
+        width="100%"
+        alt="GitHub isometric commit calendar"
+      >
+    </td>
+  </tr>
+  <tr>
     <td width="50%" align="center">
       <img
         src="/metrics/habits.svg"
