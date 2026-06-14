@@ -1,0 +1,287 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated particle banner for Simon Winther">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f6f8fa"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="420" y1="0" x2="780" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#24292f"/>
+      <stop offset="100%" stop-color="#8250df"/>
+    </linearGradient>
+
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8250df" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8250df" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a7f37" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1a7f37" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="260" rx="18" fill="url(#bg)"/>
+
+  <!-- ambient glow -->
+  <circle cx="230" cy="70" r="150" fill="url(#glowBlue)" opacity="0.10">
+    <animate attributeName="cx" values="230;280;230" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="70;100;70" dur="16s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="985" cy="190" r="165" fill="url(#glowPurple)" opacity="0.10">
+    <animate attributeName="cx" values="985;930;985" dur="17s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="190;150;190" dur="15s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- left network -->
+  <g opacity="0.9">
+    <g stroke="#cbd5e1" stroke-width="1.15" stroke-linecap="round">
+      <path d="M78 72 L142 44 L230 88 L306 52 L392 99 L470 66">
+        <animate attributeName="d"
+          values="
+            M78 72 L142 44 L230 88 L306 52 L392 99 L470 66;
+            M55 95 L165 28 L210 110 L330 36 L415 83 L495 87;
+            M78 72 L142 44 L230 88 L306 52 L392 99 L470 66"
+          dur="8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M58 180 L134 138 L214 176 L298 134 L382 171 L456 146">
+        <animate attributeName="d"
+          values="
+            M58 180 L134 138 L214 176 L298 134 L382 171 L456 146;
+            M80 160 L110 156 L236 160 L276 151 L404 152 L430 167;
+            M58 180 L134 138 L214 176 L298 134 L382 171 L456 146"
+          dur="9s" repeatCount="indefinite"/>
+      </path>
+      <path d="M142 44 L134 138 L230 88 L214 176 L306 52 L298 134 L392 99 L382 171">
+        <animate attributeName="d"
+          values="
+            M142 44 L134 138 L230 88 L214 176 L306 52 L298 134 L392 99 L382 171;
+            M165 28 L110 156 L210 110 L236 160 L330 36 L276 151 L415 83 L404 152;
+            M142 44 L134 138 L230 88 L214 176 L306 52 L298 134 L392 99 L382 171"
+          dur="8.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M470 66 L456 146">
+        <animate attributeName="d"
+          values="
+            M470 66 L456 146;
+            M495 87 L430 167;
+            M470 66 L456 146"
+          dur="8.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle r="3.2" fill="#60a5fa">
+        <animate attributeName="cx" values="78;55;78" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="72;95;72" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#1a7f37">
+        <animate attributeName="cx" values="142;165;142" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="44;28;44" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#8250df">
+        <animate attributeName="cx" values="230;210;230" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="88;110;88" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#0550ae">
+        <animate attributeName="cx" values="306;330;306" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="52;36;52" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#1a7f37">
+        <animate attributeName="cx" values="392;415;392" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="99;83;99" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#8250df">
+        <animate attributeName="cx" values="470;495;470" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="66;87;66" dur="8s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle r="2.6" fill="#60a5fa">
+        <animate attributeName="cx" values="58;80;58" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="180;160;180" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#0550ae">
+        <animate attributeName="cx" values="134;110;134" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="138;156;138" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#8250df">
+        <animate attributeName="cx" values="214;236;214" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="176;160;176" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#1a7f37">
+        <animate attributeName="cx" values="298;276;298" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="134;151;134" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#60a5fa">
+        <animate attributeName="cx" values="382;404;382" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="171;152;171" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.5" fill="#0550ae">
+        <animate attributeName="cx" values="456;430;456" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="146;167;146" dur="9s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- right network -->
+  <g opacity="0.9">
+    <g stroke="#cbd5e1" stroke-width="1.15" stroke-linecap="round">
+      <path d="M738 79 L824 41 L906 84 L992 50 L1082 90 L1148 58">
+        <animate attributeName="d"
+          values="
+            M738 79 L824 41 L906 84 L992 50 L1082 90 L1148 58;
+            M714 59 L848 56 L888 108 L1016 30 L1060 112 L1128 84;
+            M738 79 L824 41 L906 84 L992 50 L1082 90 L1148 58"
+          dur="8.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M710 191 L792 147 L880 186 L969 144 L1060 182 L1140 149">
+        <animate attributeName="d"
+          values="
+            M710 191 L792 147 L880 186 L969 144 L1060 182 L1140 149;
+            M734 170 L768 163 L902 165 L946 161 L1084 163 L1118 168;
+            M710 191 L792 147 L880 186 L969 144 L1060 182 L1140 149"
+          dur="9.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M824 41 L792 147 L906 84 L880 186 L992 50 L969 144 L1082 90 L1060 182">
+        <animate attributeName="d"
+          values="
+            M824 41 L792 147 L906 84 L880 186 L992 50 L969 144 L1082 90 L1060 182;
+            M848 56 L768 163 L888 108 L902 165 L1016 30 L946 161 L1060 112 L1084 163;
+            M824 41 L792 147 L906 84 L880 186 L992 50 L969 144 L1082 90 L1060 182"
+          dur="9s" repeatCount="indefinite"/>
+      </path>
+      <path d="M1148 58 L1140 149">
+        <animate attributeName="d"
+          values="
+            M1148 58 L1140 149;
+            M1128 84 L1118 168;
+            M1148 58 L1140 149"
+          dur="9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle r="3.1" fill="#60a5fa">
+        <animate attributeName="cx" values="738;714;738" dur="8.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="79;59;79" dur="8.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#1a7f37">
+        <animate attributeName="cx" values="824;848;824" dur="8.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="41;56;41" dur="8.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.9" fill="#8250df">
+        <animate attributeName="cx" values="906;888;906" dur="8.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="84;108;84" dur="8.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#0550ae">
+        <animate attributeName="cx" values="992;1016;992" dur="8.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="50;30;50" dur="8.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#1a7f37">
+        <animate attributeName="cx" values="1082;1060;1082" dur="8.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="90;112;90" dur="8.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#8250df">
+        <animate attributeName="cx" values="1148;1128;1148" dur="8.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="58;84;58" dur="8.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle r="2.5" fill="#60a5fa">
+        <animate attributeName="cx" values="710;734;710" dur="9.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="191;170;191" dur="9.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#0550ae">
+        <animate attributeName="cx" values="792;768;792" dur="9.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="147;163;147" dur="9.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#8250df">
+        <animate attributeName="cx" values="880;902;880" dur="9.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="186;165;186" dur="9.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#1a7f37">
+        <animate attributeName="cx" values="969;946;969" dur="9.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="144;161;144" dur="9.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#60a5fa">
+        <animate attributeName="cx" values="1060;1084;1060" dur="9.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="182;163;182" dur="9.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.5" fill="#0550ae">
+        <animate attributeName="cx" values="1140;1118;1140" dur="9.5s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="149;168;149" dur="9.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- center drifting particles -->
+  <g filter="url(#softGlow)" opacity="0.95">
+    <circle cx="520" cy="70" r="2.2" fill="#60a5fa">
+      <animate attributeName="cx" values="520;585;545;520" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="70;40;98;70" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="610" cy="120" r="2.0" fill="#8250df">
+      <animate attributeName="cx" values="610;670;628;610" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;86;156;120" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="188" r="2.2" fill="#1a7f37">
+      <animate attributeName="cx" values="560;618;574;560" dur="7.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="188;154;214;188" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="665" cy="84" r="1.9" fill="#0550ae">
+      <animate attributeName="cx" values="665;720;680;665" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="84;52;118;84" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="176" r="2.1" fill="#60a5fa">
+      <animate attributeName="cx" values="640;700;650;640" dur="7.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="176;138;202;176" dur="7.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="590" cy="55" r="1.8" fill="#1a7f37">
+      <animate attributeName="cx" values="590;640;602;590" dur="6.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="55;92;36;55" dur="6.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="145" r="1.8" fill="#8250df">
+      <animate attributeName="cx" values="700;748;718;700" dur="7.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="145;110;182;145" dur="7.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- title -->
+  <g text-anchor="middle" filter="url(#textGlow)">
+    <text
+      x="600"
+      y="145"
+      fill="url(#textGrad)"
+      font-size="40"
+      font-weight="700"
+      font-family="JetBrains Mono, Fira Code, Consolas, monospace"
+      letter-spacing="0.5">
+      Simon Winther
+    </text>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1199" height="259" rx="17.5" stroke="#d0d7de"/>
+</svg>
