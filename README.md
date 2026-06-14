@@ -233,6 +233,50 @@ All of my projects are available on my GitHub profile. I use my repositories as 
   </picture>
 </div>
 
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="/metrics/habits.svg"
+        width="100%"
+        alt="GitHub coding habits"
+      >
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="/metrics/languages.svg"
+        width="100%"
+        alt="GitHub language activity"
+      >
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="/metrics/lines.svg"
+        width="100%"
+        alt="GitHub lines of code changed"
+      >
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="/metrics/calendar.svg"
+        width="100%"
+        alt="GitHub commit calendar"
+      >
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img
+        src="/metrics/achievements.svg"
+        width="100%"
+        alt="GitHub achievements"
+      >
+    </td>
+  </tr>
+</table>
+
 </details>
 
 ---
