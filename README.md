@@ -188,18 +188,29 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 ---
 
-## Discord Status
+<details>
+  <summary><strong>Discord Status</strong></summary>
 
 <div align="center">
-
-<a href="https://discord.com/users/213349376435814401">
-  <img
-    src="https://lanyard-profile-readme.vercel.app/api/213349376435814401?theme=dark&bg=1a1b26"
-    alt="Discord status"
-  />
-</a>
-
+  <a href="https://discord.com/users/213349376435814401">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://lanyard-profile-readme.vercel.app/api/213349376435814401?theme=dark&bg=1a1b26"
+      >
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="https://lanyard-profile-readme.vercel.app/api/213349376435814401?theme=light&bg=ffffff"
+      >
+      <img
+        src="https://lanyard-profile-readme.vercel.app/api/213349376435814401?theme=dark&bg=1a1b26"
+        alt="Discord status"
+      />
+    </picture>
+  </a>
 </div>
+
+</details>
 
 ---
 
