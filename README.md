@@ -118,9 +118,13 @@ All of my projects are available on my GitHub profile. I use my repositories as 
             media="(prefers-color-scheme: dark)"
             srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=dark"
           >
+          <source
+            media="(prefers-color-scheme: light)"
+            srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=light"
+          >
           <img
             alt="OSSInsight GitHub dashboard"
-            src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=light"
+            src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20711558&image_size=auto&color_scheme=dark"
             width="100%"
           >
         </picture>
@@ -133,9 +137,13 @@ All of my projects are available on my GitHub profile. I use my repositories as 
             media="(prefers-color-scheme: dark)"
             srcset="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=dark"
           >
+          <source
+            media="(prefers-color-scheme: light)"
+            srcset="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=light"
+          >
           <img
             alt="Currently working on"
-            src="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=light"
+            src="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?user_id=20711558&activity_type=all&image_size=auto&color_scheme=dark"
             width="100%"
           >
         </picture>
@@ -144,32 +152,61 @@ All of my projects are available on my GitHub profile. I use my repositories as 
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=simonwinther&show_icons=true&theme=tokyonight&hide_border=true&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&bg_color=1a1b26"
-        width="100%"
-        alt="GitHub stats"
-      />
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://github-readme-stats.vercel.app/api?username=simonwinther&show_icons=true&theme=tokyonight&hide_border=true&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&bg_color=1a1b26"
+        >
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://github-readme-stats.vercel.app/api?username=simonwinther&show_icons=true&theme=default&hide_border=true&title_color=0969da&icon_color=8250df&text_color=24292f&bg_color=ffffff"
+        >
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=simonwinther&show_icons=true&theme=tokyonight&hide_border=true&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&bg_color=1a1b26"
+          width="100%"
+          alt="GitHub stats"
+        >
+      </picture>
     </td>
     <td width="50%" align="center">
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=simonwinther&layout=compact&theme=tokyonight&hide_border=true&title_color=7aa2f7&text_color=9ece6a&icon_color=bb9af7&bg_color=1a1b26&hide=HTML,CSS"
-        width="100%"
-        alt="Top languages"
-      />
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=simonwinther&layout=compact&theme=tokyonight&hide_border=true&title_color=7aa2f7&text_color=9ece6a&icon_color=bb9af7&bg_color=1a1b26&hide=HTML,CSS"
+        >
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=simonwinther&layout=compact&theme=default&hide_border=true&title_color=0969da&text_color=24292f&icon_color=8250df&bg_color=ffffff&hide=HTML,CSS"
+        >
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=simonwinther&layout=compact&theme=tokyonight&hide_border=true&title_color=7aa2f7&text_color=9ece6a&icon_color=bb9af7&bg_color=1a1b26&hide=HTML,CSS"
+          width="100%"
+          alt="Top languages"
+        >
+      </picture>
     </td>
   </tr>
 </table>
 
 <div align="center">
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=simonwinther&theme=tokyo-night&hide_border=true&color=7aa2f7&height=300"
-  width="100%"
-  alt="GitHub activity graph"
-/>
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github-readme-activity-graph.vercel.app/graph?username=simonwinther&theme=tokyo-night&hide_border=true&color=7aa2f7&height=300"
+    >
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github-readme-activity-graph.vercel.app/graph?username=simonwinther&theme=tokyo-day&hide_border=true&height=300"
+    >
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=simonwinther&theme=tokyo-night&hide_border=true&color=7aa2f7&height=300"
+      width="100%"
+      alt="GitHub activity graph"
+    >
+  </picture>
 </div>
 
 </details>
-
 
 ---
 
@@ -178,11 +215,21 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 <br/>
 
-<img
-  src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
-  width="100%"
-  alt="GitHub metrics"
-/>
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
+  >
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&hide_border=true"
+  >
+  <img
+    src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
+    width="100%"
+    alt="GitHub metrics"
+  >
+</picture>
 
 </details>
 
