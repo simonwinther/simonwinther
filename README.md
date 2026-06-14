@@ -29,9 +29,6 @@ I like working on machine learning, medical AI, and practical software projects.
 <a href="https://github.com/simonwinther">
   <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub"/>
 </a>
-<a href="https://www.instagram.com/simonwinther01/">
-  <img src="https://img.shields.io/badge/Instagram-c13584?logo=instagram&logoColor=white&style=for-the-badge" alt="Instagram"/>
-</a>
 <a href="https://discord.com/users/213349376435814401">
   <img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge" alt="Discord"/>
 </a>
