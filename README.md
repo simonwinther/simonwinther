@@ -2,7 +2,7 @@
 
 <a href="https://github.com/simonwinther">
  <img
- src="./intro.svg"
+ src="./please_dont_steal_my_banner_for_your_own_readme_go_away.svg"
  alt="banner"
  width="850"
  />
