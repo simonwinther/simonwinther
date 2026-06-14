@@ -81,7 +81,7 @@ I’m studying Computer Science and I’m mostly interested in machine learning,
 
 I like building things, experimenting with models, and improving my development setup. Most of my work is around neural networks, model training, Python, PyTorch, and small software projects.
 
-I use Arch Linux with Hyprland, Neovim, and Ghostty. You can check my [dotfiles](https://github.com/simonwinther/dotfiles) if you want to see more about my setup.
+I use Arch Linux with Hyprland, Neovim, and Ghostty. You can check my [dotfiles](https://github.com/simonwinther/dotfiles) if you want to see more about my setup. I do spend too much time on dotfiles and tinkering with it because I just find it enjoyable to try and optimize the way I work. So that's why you may see a lot of projects opiniated to my own workstation.
 
 <br clear="right"/>
 
