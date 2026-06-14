@@ -22,29 +22,45 @@
     </style>
 
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#080c12"/>
-      <stop offset="50%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0b0b14"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#0f131a"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
-    <linearGradient id="panelStroke" x1="45" y1="40" x2="1155" y2="380" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#7dcfff"/>
-      <stop offset="45%" stop-color="#7aa2f7"/>
-      <stop offset="100%" stop-color="#bb9af7"/>
+    <linearGradient id="bgStroke" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#202938" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#262d3d" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="panelStroke" x1="60" y1="55" x2="1140" y2="365" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#36516c" stop-opacity="0.70"/>
+      <stop offset="50%" stop-color="#3e5478" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5a466d" stop-opacity="0.70"/>
+    </linearGradient>
+
+    <linearGradient id="panelFill" x1="45" y1="40" x2="1155" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#10151d"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
     <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7dcfff" stop-opacity="0.9"/>
+      <stop offset="0%" stop-color="#7dcfff" stop-opacity="0.42"/>
       <stop offset="100%" stop-color="#7dcfff" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#bb9af7" stop-opacity="0.85"/>
+      <stop offset="0%" stop-color="#bb9af7" stop-opacity="0.36"/>
       <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
     </radialGradient>
 
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9ece6a" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#9ece6a" stop-opacity="0"/>
+    </radialGradient>
+
     <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -52,25 +68,31 @@
     </filter>
 
     <filter id="panelShadow" x="-20%" y="-30%" width="140%" height="160%">
-      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.28"/>
     </filter>
   </defs>
 
   <rect width="1200" height="420" rx="22" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="21.5" stroke="url(#bgStroke)"/>
 
   <!-- ambient glow -->
-  <circle cx="210" cy="90" r="180" fill="url(#blueGlow)" opacity="0.12">
-    <animate attributeName="cx" values="210;260;230;285;210" dur="23s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="90;130;70;110;90" dur="27s" repeatCount="indefinite"/>
+  <circle cx="220" cy="95" r="175" fill="url(#blueGlow)" opacity="0.22">
+    <animate attributeName="cx" values="220;255;232;272;220" dur="23s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="95;128;78;112;95" dur="27s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="995" cy="310" r="210" fill="url(#purpleGlow)" opacity="0.13">
-    <animate attributeName="cx" values="995;940;1030;970;995" dur="26s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="310;260;335;285;310" dur="29s" repeatCount="indefinite"/>
+  <circle cx="985" cy="305" r="205" fill="url(#purpleGlow)" opacity="0.24">
+    <animate attributeName="cx" values="985;944;1018;972;985" dur="26s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="305;265;332;286;305" dur="29s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="620" cy="92" r="120" fill="url(#greenGlow)" opacity="0.18">
+    <animate attributeName="cx" values="620;650;604;632;620" dur="19s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="92;76;114;98;92" dur="22s" repeatCount="indefinite"/>
   </circle>
 
   <!-- left neural network -->
-  <g opacity="0.75">
+  <g opacity="0.52">
     <animateTransform attributeName="transform" type="translate"
       values="0 0; 18 -12; -9 16; 14 8; 0 0"
       dur="24s"
@@ -112,7 +134,7 @@
   </g>
 
   <!-- right neural network -->
-  <g opacity="0.75">
+  <g opacity="0.52">
     <animateTransform attributeName="transform" type="translate"
       values="0 0; -16 14; 12 -10; -8 -16; 0 0"
       dur="27s"
@@ -154,7 +176,7 @@
   </g>
 
   <!-- floating particles -->
-  <g filter="url(#softGlow)" opacity="0.85">
+  <g filter="url(#softGlow)" opacity="0.60">
     <circle r="1.8" fill="#7dcfff">
       <animate attributeName="cx" values="500;545;580;528;500" dur="15s" repeatCount="indefinite"/>
       <animate attributeName="cy" values="75;48;92;116;75" dur="18s" repeatCount="indefinite"/>
@@ -174,12 +196,12 @@
   </g>
 
   <!-- code panel -->
-  <rect x="45" y="40" width="1110" height="340" rx="22" fill="#080d14" opacity="0.88" filter="url(#panelShadow)"/>
-  <rect x="45.5" y="40.5" width="1109" height="339" rx="21.5" stroke="url(#panelStroke)" stroke-opacity="0.85"/>
-  <rect x="67" y="66" width="1066" height="288" rx="14" fill="#0d1117" opacity="0.35"/>
+  <rect x="45" y="40" width="1110" height="340" rx="22" fill="url(#panelFill)" opacity="0.84" filter="url(#panelShadow)"/>
+  <rect x="45.5" y="40.5" width="1109" height="339" rx="21.5" stroke="url(#panelStroke)" stroke-opacity="0.82"/>
+  <rect x="67" y="66" width="1066" height="288" rx="14" fill="#121821" opacity="0.18"/>
 
   <!-- indent guides -->
-  <g stroke="#2f3b52" stroke-width="1" stroke-dasharray="4 8" opacity="0.45">
+  <g stroke="#2f3b52" stroke-width="1" stroke-dasharray="4 8" opacity="0.34">
     <line x1="102" y1="112" x2="102" y2="334"/>
     <line x1="142" y1="146" x2="142" y2="334"/>
     <line x1="182" y1="180" x2="182" y2="334"/>
@@ -188,7 +210,7 @@
   <!-- code -->
   <g class="code" xml:space="preserve">
     <text x="80" y="92">
-      <tspan class="type">Developer</tspan><tspan class="fg"> dev = </tspan><tspan class="kw">new</tspan><tspan class="fg"> </tspan><tspan class="type">Developer</tspan><tspan class="fg">(</tspan><tspan class="kw">new</tspan><tspan class="fg"> </tspan><tspan class="type">User</tspan><tspan class="fg">(</tspan><tspan class="num">3</tspan><tspan class="fg">, </tspan><tspan class="string">&quot;Simon Winther&quot;</tspan><tspan class="fg">));</tspan>
+      <tspan class="type">Developer</tspan><tspan class="fg"> dev = </tspan><tspan class="kw">new</tspan><tspan class="fg"> </tspan><tspan class="type">Developer</tspan><tspan class="fg">(</tspan><tspan class="kw">new</tspan><tspan class="fg"> </tspan><tspan class="type">User</tspan><tspan class="fg">(</tspan><tspan class="num">3</tspan><tspan class="fg">, </tspan><tspan class="string">"Simon Winther"</tspan><tspan class="fg">));</tspan>
     </text>
 
     <text x="80" y="126">
