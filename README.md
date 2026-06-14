@@ -48,12 +48,14 @@ I like working on machine learning, deep learning, medical AI, and practical sof
 
 ## About
 
-<img
-  src="./code-card.svg"
-  align="right"
-  width="360"
-  alt="bad joooke"
-/>
+<a href="https://github.com/simonwinther">
+ <img
+   src="./code-card.svg"
+   align="right"
+   width="380"
+   alt="bad joooke"
+ />
+<a href="https://github.com/simonwinther">
 
 I’m studying Computer Science and I’m mostly interested in machine learning, deep learning, and medical AI.
 
