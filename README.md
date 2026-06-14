@@ -71,7 +71,7 @@ I like working on machine learning, deep learning, medical AI, and practical sof
     <img
       src="./code-card.svg"
       align="right"
-      height="150"
+      height="140"
       alt="code card"
     >
   </picture>
@@ -215,21 +215,23 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 <br/>
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
-  >
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&hide_border=true"
-  >
-  <img
-    src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
-    width="100%"
-    alt="GitHub metrics"
-  >
-</picture>
+<div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
+    >
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&hide_border=true"
+    >
+    <img
+      src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
+      width="50%"
+      alt="GitHub metrics"
+    >
+  </picture>
+</div>
 
 </details>
 
