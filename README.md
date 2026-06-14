@@ -1,11 +1,21 @@
 <div align="center">
 
 <a href="https://github.com/simonwinther">
- <img
- src="./please_dont_steal_my_banner_for_your_own_readme_go_away.svg"
- alt="banner"
- width="850"
- />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="./banner.svg"
+    >
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="./banner-light.svg"
+    >
+    <img
+      src="./banner.svg"
+      alt="banner"
+      width="850"
+    />
+  </picture>
 </a>
 
 <br/>
