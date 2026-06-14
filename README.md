@@ -1,16 +1,14 @@
 <div align="center">
 
 <a href="https://github.com/simonwinther">
-  <img
-    src="https://raw.githubusercontent.com/simonwinther/simonwinther/main/assets/intro.svg"
-    alt="banner"
-    width="850"
-  />
+ <img
+ src="./intro.svg"
+ alt="banner"
+ width="850"
+ />
 </a>
 
 <br/>
-
-# Simon Winther
 
 ### Computer Scientist from Denmark
 #### Machine Learning · Deep Learning · SWE
