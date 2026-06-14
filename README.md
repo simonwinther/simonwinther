@@ -71,7 +71,7 @@ I like working on machine learning, deep learning, medical AI, and practical sof
     <img
       src="./code-card.svg"
       align="right"
-      height="140"
+      height="150"
       alt="code card"
     >
   </picture>
