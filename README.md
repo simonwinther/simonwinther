@@ -49,10 +49,10 @@ I like working on machine learning, deep learning, medical AI, and practical sof
 ## About
 
 <img
-  src="https://raw.githubusercontent.com/simonwinther/simonwinther/main/Sk%C3%A6rmbillede%202021-10-18%20kl.%2002.51.56.png"
+  src="./code-card.svg"
   align="right"
   width="360"
-  alt="Development environment screenshot"
+  alt="bad joooke"
 />
 
 I’m studying Computer Science and I’m mostly interested in machine learning, deep learning, and medical AI.
