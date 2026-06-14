@@ -1,0 +1,226 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated code card">
+  <defs>
+    <style>
+      .code {
+        font-family: JetBrains Mono, Fira Code, Consolas, Menlo, monospace;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        white-space: pre;
+      }
+
+      .fg { fill: #c0caf5; }
+      .dim { fill: #565f89; }
+      .kw { fill: #f7768e; }
+      .type { fill: #2ac3de; }
+      .method { fill: #7dcfff; }
+      .string { fill: #e0af68; }
+      .num { fill: #bb9af7; }
+      .green { fill: #9ece6a; }
+      .orange { fill: #ff9e64; }
+      .cyan { fill: #73daca; }
+    </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080c12"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0b0b14"/>
+    </linearGradient>
+
+    <linearGradient id="panelStroke" x1="45" y1="40" x2="1155" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7dcfff"/>
+      <stop offset="45%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7dcfff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7dcfff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bb9af7" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="panelShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="22" fill="url(#bg)"/>
+
+  <!-- ambient glow -->
+  <circle cx="210" cy="90" r="180" fill="url(#blueGlow)" opacity="0.12">
+    <animate attributeName="cx" values="210;260;230;285;210" dur="23s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="90;130;70;110;90" dur="27s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="995" cy="310" r="210" fill="url(#purpleGlow)" opacity="0.13">
+    <animate attributeName="cx" values="995;940;1030;970;995" dur="26s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="310;260;335;285;310" dur="29s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- left neural network -->
+  <g opacity="0.75">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 18 -12; -9 16; 14 8; 0 0"
+      dur="24s"
+      repeatCount="indefinite"/>
+
+    <g stroke="#263241" stroke-width="1.15" stroke-linecap="round">
+      <path d="M30 85 L90 55 L160 90 L235 45 L315 100 L390 70"/>
+      <path d="M15 245 L82 190 L170 235 L255 175 L350 220 L430 185"/>
+      <path d="M90 55 L82 190 L160 90 L170 235 L235 45 L255 175 L315 100 L350 220"/>
+      <path d="M390 70 L430 185"/>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle r="3" fill="#7dcfff">
+        <animate attributeName="cx" values="30;55;18;44;30" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="85;65;104;92;85" dur="17s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#9ece6a">
+        <animate attributeName="cx" values="90;112;78;100;90" dur="15s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="55;36;74;43;55" dur="18s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#bb9af7">
+        <animate attributeName="cx" values="160;139;180;151;160" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="90;112;76;101;90" dur="19s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#7aa2f7">
+        <animate attributeName="cx" values="235;260;218;246;235" dur="18s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="45;62;30;52;45" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#7dcfff">
+        <animate attributeName="cx" values="315;340;298;326;315" dur="17s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="100;82;120;94;100" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#bb9af7">
+        <animate attributeName="cx" values="390;415;370;402;390" dur="19s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="70;94;54;80;70" dur="18s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- right neural network -->
+  <g opacity="0.75">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -16 14; 12 -10; -8 -16; 0 0"
+      dur="27s"
+      repeatCount="indefinite"/>
+
+    <g stroke="#2c2845" stroke-width="1.15" stroke-linecap="round">
+      <path d="M790 80 L865 45 L940 96 L1028 58 L1110 115 L1172 75"/>
+      <path d="M760 270 L845 220 L925 285 L1015 230 L1105 292 L1170 245"/>
+      <path d="M865 45 L845 220 L940 96 L925 285 L1028 58 L1015 230 L1110 115 L1105 292"/>
+      <path d="M790 80 L760 270"/>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle r="3" fill="#7aa2f7">
+        <animate attributeName="cx" values="790;770;812;780;790" dur="18s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="80;60;92;104;80" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#9ece6a">
+        <animate attributeName="cx" values="865;890;850;876;865" dur="19s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="45;68;30;54;45" dur="17s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#bb9af7">
+        <animate attributeName="cx" values="940;916;965;932;940" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="96;118;75;104;96" dur="22s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.8" fill="#7dcfff">
+        <animate attributeName="cx" values="1028;1052;1006;1036;1028" dur="21s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="58;38;78;66;58" dur="19s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#bb9af7">
+        <animate attributeName="cx" values="1110;1088;1130;1102;1110" dur="17s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="115;138;94;124;115" dur="23s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.7" fill="#ff9e64">
+        <animate attributeName="cx" values="1172;1150;1184;1164;1172" dur="22s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="75;96;58;84;75" dur="18s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- floating particles -->
+  <g filter="url(#softGlow)" opacity="0.85">
+    <circle r="1.8" fill="#7dcfff">
+      <animate attributeName="cx" values="500;545;580;528;500" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="75;48;92;116;75" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.9" fill="#bb9af7">
+      <animate attributeName="cx" values="680;720;760;706;680" dur="17s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="300;258;322;348;300" dur="19s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.5" fill="#9ece6a">
+      <animate attributeName="cx" values="610;650;625;585;610" dur="13s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="55;92;126;83;55" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.7" fill="#7aa2f7">
+      <animate attributeName="cx" values="565;610;660;620;565" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="340;308;350;372;340" dur="15s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- code panel -->
+  <rect x="45" y="40" width="1110" height="340" rx="22" fill="#080d14" opacity="0.88" filter="url(#panelShadow)"/>
+  <rect x="45.5" y="40.5" width="1109" height="339" rx="21.5" stroke="url(#panelStroke)" stroke-opacity="0.85"/>
+  <rect x="67" y="66" width="1066" height="288" rx="14" fill="#0d1117" opacity="0.35"/>
+
+  <!-- indent guides -->
+  <g stroke="#2f3b52" stroke-width="1" stroke-dasharray="4 8" opacity="0.45">
+    <line x1="102" y1="112" x2="102" y2="334"/>
+    <line x1="142" y1="146" x2="142" y2="334"/>
+    <line x1="182" y1="180" x2="182" y2="334"/>
+  </g>
+
+  <!-- code -->
+  <g class="code" xml:space="preserve">
+    <text x="80" y="92">
+      <tspan class="type">Developer</tspan><tspan class="fg"> dev = </tspan><tspan class="kw">new</tspan><tspan class="fg"> </tspan><tspan class="type">Developer</tspan><tspan class="fg">(</tspan><tspan class="kw">new</tspan><tspan class="fg"> </tspan><tspan class="type">User</tspan><tspan class="fg">(</tspan><tspan class="num">3</tspan><tspan class="fg">, </tspan><tspan class="string">&quot;Simon Winther&quot;</tspan><tspan class="fg">));</tspan>
+    </text>
+
+    <text x="80" y="126">
+      <tspan class="kw">if</tspan><tspan class="fg"> (!(dev.</tspan><tspan class="method">getProjects</tspan><tspan class="fg">().</tspan><tspan class="method">allMatch</tspan><tspan class="fg">(</tspan><tspan class="cyan">Project</tspan><tspan class="fg">::</tspan><tspan class="method">isDone</tspan><tspan class="fg">))) {</tspan>
+    </text>
+
+    <text x="120" y="160">
+      <tspan class="fg">dev.</tspan><tspan class="method">getProjects</tspan><tspan class="fg">().</tspan><tspan class="method">filter</tspan><tspan class="fg">(</tspan><tspan class="green">Predicate</tspan><tspan class="fg">.</tspan><tspan class="method">not</tspan><tspan class="fg">(</tspan><tspan class="cyan">Project</tspan><tspan class="fg">::</tspan><tspan class="method">isDone</tspan><tspan class="fg">)).</tspan><tspan class="method">forEach</tspan><tspan class="fg">(</tspan><tspan class="orange">project</tspan><tspan class="fg"> -&gt; {</tspan>
+    </text>
+
+    <text x="160" y="194">
+      <tspan class="kw">try</tspan><tspan class="fg"> {</tspan>
+    </text>
+
+    <text x="200" y="228">
+      <tspan class="orange">project</tspan><tspan class="fg">.</tspan><tspan class="method">finish</tspan><tspan class="fg">();</tspan>
+    </text>
+
+    <text x="160" y="262">
+      <tspan class="fg">} </tspan><tspan class="kw">catch</tspan><tspan class="fg"> (</tspan><tspan class="cyan">ProjectCompletionException</tspan><tspan class="fg"> e) {</tspan>
+    </text>
+
+    <text x="200" y="296">
+      <tspan class="green">dev</tspan><tspan class="fg">.</tspan><tspan class="method">cryHimselfToSleep</tspan><tspan class="fg">();</tspan>
+    </text>
+
+    <text x="160" y="330">
+      <tspan class="fg">}</tspan>
+    </text>
+
+    <text x="120" y="364">
+      <tspan class="fg">});</tspan>
+    </text>
+  </g>
+</svg>
