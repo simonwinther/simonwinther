@@ -13,6 +13,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Remove unused metrics
+        run: |
+          rm -f metrics/habits.svg
+          rm -f metrics/languages.svg
+          rm -f metrics/lines.svg
+          rm -f metrics/calendar.svg
+          rm -f metrics/achievements.svg
+
+      - name: Render profile metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          user: simonwinther
+          template: classic
+          filename: metrics/base.svg
+          output_action: none
+          config_timezone: Europe/Copenhagen
+
+      - name: Store profile metrics
+        run: |
+          sudo mkdir -p metrics
+          sudo cp /metrics_renders/metrics/base.svg metrics/base.svg
+          sudo chown -R "$USER":"$USER" metrics
+
       - name: Render isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -34,119 +58,9 @@ jobs:
           sudo cp /metrics_renders/metrics/isocalendar.svg metrics/isocalendar.svg
           sudo chown -R "$USER":"$USER" metrics
 
-      - name: Render coding habits
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          user: simonwinther
-          template: classic
-          base: ""
-          filename: metrics/habits.svg
-          output_action: none
-          config_timezone: Europe/Copenhagen
-
-          # Habits & Activity
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: graph
-          plugin_habits_trim: yes
-
-      - name: Store coding habits
-        run: |
-          sudo mkdir -p metrics
-          sudo cp /metrics_renders/metrics/habits.svg metrics/habits.svg
-          sudo chown -R "$USER":"$USER" metrics
-
-      - name: Render language activity
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          user: simonwinther
-          template: classic
-          base: ""
-          filename: metrics/languages.svg
-          output_action: none
-          config_timezone: Europe/Copenhagen
-
-          # Language activity
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: bytes-size, percentage
-
-      - name: Store language activity
-        run: |
-          sudo mkdir -p metrics
-          sudo cp /metrics_renders/metrics/languages.svg metrics/languages.svg
-          sudo chown -R "$USER":"$USER" metrics
-
-      - name: Render lines of code
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          user: simonwinther
-          template: classic
-          base: ""
-          filename: metrics/lines.svg
-          output_action: none
-          config_timezone: Europe/Copenhagen
-
-          # Lines of code changed
-          plugin_lines: yes
-          plugin_lines_sections: repositories, history
-          plugin_lines_repositories_limit: 4
-          plugin_lines_history_limit: 4
-
-      - name: Store lines of code
-        run: |
-          sudo mkdir -p metrics
-          sudo cp /metrics_renders/metrics/lines.svg metrics/lines.svg
-          sudo chown -R "$USER":"$USER" metrics
-
-      - name: Render commit calendar
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          user: simonwinther
-          template: classic
-          base: ""
-          filename: metrics/calendar.svg
-          output_action: none
-          config_timezone: Europe/Copenhagen
-
-          # Commit calendar
-          plugin_calendar: yes
-          plugin_calendar_limit: 0
-
-      - name: Store commit calendar
-        run: |
-          sudo mkdir -p metrics
-          sudo cp /metrics_renders/metrics/calendar.svg metrics/calendar.svg
-          sudo chown -R "$USER":"$USER" metrics
-
-      - name: Render achievements
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          user: simonwinther
-          template: classic
-          base: ""
-          filename: metrics/achievements.svg
-          output_action: none
-          config_timezone: Europe/Copenhagen
-
-          # Achievements
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-
-      - name: Store achievements
-        run: |
-          sudo mkdir -p metrics
-          sudo cp /metrics_renders/metrics/achievements.svg metrics/achievements.svg
-          sudo chown -R "$USER":"$USER" metrics
-
       - name: Commit generated metrics
         run: |
-          git add metrics
+          git add -A metrics
 
           if git diff --cached --quiet; then
             echo "No metrics changes to commit."

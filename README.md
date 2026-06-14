@@ -109,7 +109,7 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 <br/>
 
-<table>
+<table width="100%">
   <tr>
     <td width="50%" align="center">
       <a href="https://next.ossinsight.io/analyze/simonwinther">
@@ -215,72 +215,20 @@ All of my projects are available on my GitHub profile. I use my repositories as 
 
 <br/>
 
-<div align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
-    >
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&hide_border=true"
-    >
-    <img
-      src="https://metrics.lecoq.io/simonwinther?plugin_isocalendar=1&plugin_isocalendar_duration=fullyear&config_timezone=Europe/Copenhagen&theme=tokyonight&hide_border=true"
-      width="50%"
-      alt="GitHub metrics"
-    >
-  </picture>
-</div>
-
 <table>
   <tr>
-    <td colspan="2" align="center">
+    <td width="50%" align="center">
+      <img
+        src="/metrics/base.svg"
+        width="100%"
+        alt="GitHub profile metrics"
+      >
+    </td>
+    <td width="50%" align="center">
       <img
         src="/metrics/isocalendar.svg"
         width="100%"
         alt="GitHub isometric commit calendar"
-      >
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img
-        src="/metrics/habits.svg"
-        width="100%"
-        alt="GitHub coding habits"
-      >
-    </td>
-    <td width="50%" align="center">
-      <img
-        src="/metrics/languages.svg"
-        width="100%"
-        alt="GitHub language activity"
-      >
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img
-        src="/metrics/lines.svg"
-        width="100%"
-        alt="GitHub lines of code changed"
-      >
-    </td>
-    <td width="50%" align="center">
-      <img
-        src="/metrics/calendar.svg"
-        width="100%"
-        alt="GitHub commit calendar"
-      >
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img
-        src="/metrics/achievements.svg"
-        width="100%"
-        alt="GitHub achievements"
       >
     </td>
   </tr>
