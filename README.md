@@ -2,8 +2,8 @@
 
 <a href="https://github.com/simonwinther">
   <img
-    src="https://raw.githubusercontent.com/simonwinther/simonwinther/main/Hnet-image.gif"
-    alt="Animated neural network banner"
+    src="https://raw.githubusercontent.com/simonwinther/simonwinther/main/assets/intro.svg"
+    alt="banner"
     width="850"
   />
 </a>
@@ -17,7 +17,7 @@
 
 <p>
   <em>
-I like working on machine learning, medical AI, and practical software projects.
+I like working on machine learning, deep learning, medical AI, and practical software projects.
   </em>
 </p>
 
