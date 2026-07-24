@@ -1,6 +1,18 @@
-<svg width="360" height="28" viewBox="0 0 360 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="264"
+  height="24"
+  viewBox="0 0 264 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <defs>
-    <linearGradient id="tphGradient" x1="0" y1="0" x2="360" y2="28" gradientUnits="userSpaceOnUse">
+    <linearGradient
+      id="tphGradient"
+      x1="0"
+      y1="0"
+      x2="264"
+      y2="24"
+      gradientUnits="userSpaceOnUse"
+    >
       <stop offset="0%" stop-color="#7C5CFF"/>
       <stop offset="30%" stop-color="#C94BFF"/>
       <stop offset="58%" stop-color="#F08A7C"/>
@@ -10,12 +22,10 @@
 
   <text
     x="0"
-    y="20"
+    y="19"
     font-family="Inter, Segoe UI, Arial, sans-serif"
     font-size="20"
     font-weight="700"
     fill="url(#tphGradient)"
-  >
-    The Programmer's Hangout
-  </text>
+  >The Programmer's Hangout</text>
 </svg>
