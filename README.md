@@ -37,10 +37,9 @@
         src="./figures/tph-text.svg"
         alt="The Programmer's Hangout"
         height="20"
-        align="middle"
+        align="top"
       />
-    </a>
-    (discord.gg/programming).
+    </a>(discord.gg/programming).
   </em>
 </p>
 
