@@ -29,6 +29,7 @@
   </em>
 </p>
 
+<!--
 <p>
   <em>
     I'm also a moderator at
@@ -42,6 +43,7 @@
     </a>(discord.gg/programming).
   </em>
 </p>
+-->
 
 <br/>
 
