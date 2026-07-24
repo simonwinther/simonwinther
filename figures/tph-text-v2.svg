@@ -1,7 +1,7 @@
 <svg
-  width="238"
+  width="270"
   height="24"
-  viewBox="0 0 238 24"
+  viewBox="0 0 270 24"
   xmlns="http://www.w3.org/2000/svg"
 >
   <defs>
@@ -9,7 +9,7 @@
       id="tphGradient"
       x1="0"
       y1="0"
-      x2="238"
+      x2="270"
       y2="24"
       gradientUnits="userSpaceOnUse"
     >
@@ -21,11 +21,13 @@
   </defs>
 
   <text
-    x="0"
+    x="2"
     y="19"
+    textLength="264"
+    lengthAdjust="spacingAndGlyphs"
     font-family="Inter, Segoe UI, Arial, sans-serif"
     font-size="20"
     font-weight="700"
     fill="url(#tphGradient)"
-  >The Programmer's Hangout.</text>
+  >The Programmer's Hangout</text>
 </svg>
