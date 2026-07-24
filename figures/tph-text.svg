@@ -1,7 +1,7 @@
 <svg
-  width="264"
+  width="270"
   height="24"
-  viewBox="0 0 264 24"
+  viewBox="0 0 270 24"
   xmlns="http://www.w3.org/2000/svg"
 >
   <defs>
@@ -9,7 +9,7 @@
       id="tphGradient"
       x1="0"
       y1="0"
-      x2="264"
+      x2="270"
       y2="24"
       gradientUnits="userSpaceOnUse"
     >
@@ -21,8 +21,10 @@
   </defs>
 
   <text
-    x="0"
+    x="2"
     y="19"
+    textLength="264"
+    lengthAdjust="spacingAndGlyphs"
     font-family="Inter, Segoe UI, Arial, sans-serif"
     font-size="20"
     font-weight="700"
