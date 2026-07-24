@@ -33,10 +33,13 @@
   <em>
     I'm also a moderator at
     <a href="https://discord.gg/programming">
-      <img src="./figures/tph-text.svg" alt="The Programmer's Hangout" height="20" />
+      <img src="./figures/tph-text-v2.svg" alt="The Programmer's Hangout" height="15" />
     </a> (discord.gg/programming).
   </em>
 </p>
+
+
+
 <br/>
 
 <a href="https://www.linkedin.com/in/simon-winther-36b643220/">
