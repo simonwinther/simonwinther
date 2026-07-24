@@ -22,7 +22,8 @@
 
   <text
     x="2"
-    y="19"
+    y="12"
+    dominant-baseline="middle"
     textLength="264"
     lengthAdjust="spacingAndGlyphs"
     font-family="Inter, Segoe UI, Arial, sans-serif"
