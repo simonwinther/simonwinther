@@ -34,7 +34,7 @@
     I'm also a moderator at
     <a href="https://discord.gg/programming">
       <img
-        src="./figures/tph-text-v3.svg"
+        src="./figures/tph-text.svg"
         alt="The Programmer's Hangout"
         height="20"
         align="middle"
