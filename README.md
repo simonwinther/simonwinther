@@ -33,12 +33,16 @@
   <em>
     I'm also a moderator at
     <a href="https://discord.gg/programming">
-      <img src="./figures/tph-text-v2.svg" alt="The Programmer's Hangout" height="15" />
-    </a> (discord.gg/programming).
+      <img
+        src="./figures/tph-text-v3.svg"
+        alt="The Programmer's Hangout"
+        height="20"
+        align="middle"
+      />
+    </a>
+    (discord.gg/programming).
   </em>
 </p>
-
-
 
 <br/>
 
